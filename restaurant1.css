@@ -1,0 +1,270 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation styles */
+.navbar {
+  /*box-shadow: 0px 5px 10px 0px #aaa;*/
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.95;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;}
+
+/* Showcase area styles */
+.showcase-area {
+  padding: 80px 0;
+  text-align: center;
+  
+  
+}
+
+.main-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* About section styles */
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+
+#about .small {
+  font-size: 2em;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Food section styles */
+.food {
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.food h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.food-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+  }
+
+.food-type {
+  text-align: center;
+}
+
+.food-type img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Food menu section styles */
+.food-menu {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.food-menu-heading {
+  font-size: 2em;
+  margin: 20px;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food-menu-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.food-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.food-description {
+    margin: auto 1.5rem;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-box {
+  margin-bottom: 40px;
+}
+
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.star-rating {
+  color: #fdd835;
+  margin-top: 10px;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-img img {
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    margin-top: 20px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    margin-top: 20px;
+  }
+
+  .food-container,
+  .food-menu-container,
+  .testimonial-container {
+    flex-direction: column;
+  }
+}
